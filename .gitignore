@@ -1,0 +1,12 @@
+.flow/
+node_modules/
+yarn.lock
+yarn-error.log
+.idea/
+.next/
+.DS_Store
+*.iml
+.env
+.graphqlconfig
+schema.graphql
+report.*.json
