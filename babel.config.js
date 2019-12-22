@@ -1,15 +1,18 @@
 module.exports = api => {
   api.cache(true);
 
-  const presets = ['next/babel'];
+  const presets = ["next/babel"];
   const plugins = [
     [
-      'module-resolver',
+      "module-resolver",
       {
-        root: ['./'],
+        root: ["./"],
         alias: {
-          components: './components',
-          containers: './containers'
+          components: "./components",
+          containers: "./containers",
+          libs: "./libs",
+          types: "./types",
+          store: "./store"
         }
       }
     ]
@@ -19,4 +22,4 @@ module.exports = api => {
     presets,
     plugins
   };
-}
+};

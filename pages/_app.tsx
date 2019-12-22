@@ -1,6 +1,12 @@
 import * as React from "react";
 // components
 import App from "next/app";
+// hoc(s)
+import withRedux from "next-redux-wrapper";
+// libs
+import { Provider } from "react-redux";
+import createStore from "libs/createStore";
+import makeStore from "store";
 
 class AppComponent extends App {
   getInitialProps = async ({ ctx, Component }) => {
@@ -14,14 +20,14 @@ class AppComponent extends App {
   };
 
   render(): JSX.Element {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, store }: any = this.props;
 
     return (
-      <>
+      <Provider store={store}>
         <Component {...pageProps} />
-      </>
+      </Provider>
     );
   }
 }
 
-export default AppComponent;
+export default withRedux(createStore(makeStore()))(AppComponent);
