@@ -7,6 +7,8 @@ import withRedux from "next-redux-wrapper";
 import { Provider } from "react-redux";
 import createStore from "libs/createStore";
 import makeStore from "store";
+// styles
+import GlobalStyles from "styles/globalStyles";
 
 class AppComponent extends App {
   getInitialProps = async ({ ctx, Component }) => {
@@ -23,9 +25,12 @@ class AppComponent extends App {
     const { Component, pageProps, store }: any = this.props;
 
     return (
-      <Provider store={store}>
-        <Component {...pageProps} />
-      </Provider>
+      <>
+        <GlobalStyles />
+        <Provider store={store}>
+          <Component {...pageProps} />
+        </Provider>
+      </>
     );
   }
 }

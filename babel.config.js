@@ -12,8 +12,15 @@ module.exports = api => {
           containers: "./containers",
           libs: "./libs",
           types: "./types",
-          store: "./store"
+          store: "./store",
+          styles: "./styles"
         }
+      }
+    ],
+    [
+      "inline-import",
+      {
+        extensions: [".css"]
       }
     ]
   ];
