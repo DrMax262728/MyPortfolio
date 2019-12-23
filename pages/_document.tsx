@@ -8,7 +8,9 @@ class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="portfolio icon" href="/static/portfolioIcon.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />
