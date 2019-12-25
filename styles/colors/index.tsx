@@ -1,7 +1,5 @@
 export default {
   // backgrounds
-  purple800: "#332f50",
-
-  // black shades
-  black500: "#000"
+  purple700: "#332f50",
+  purple900: "#191533"
 };

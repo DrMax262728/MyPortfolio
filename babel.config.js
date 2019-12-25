@@ -10,6 +10,8 @@ module.exports = api => {
         alias: {
           components: "./components",
           containers: "./containers",
+          constants: "./constants",
+          enums: "./enums",
           libs: "./libs",
           types: "./types",
           store: "./store",

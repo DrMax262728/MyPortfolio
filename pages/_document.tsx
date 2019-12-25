@@ -10,6 +10,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="portfolio icon" href="/static/portfolioIcon.png" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

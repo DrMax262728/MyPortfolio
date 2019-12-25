@@ -1,11 +1,11 @@
 import * as React from "react";
-import Header from "components/viewComponents/PortfolioLanding/Header";
+// components
+import PortfolioLanding from "components/viewComponents/PortfolioLanding";
 
 const HomePage = () => {
   return (
     <div>
-      <div>Home page!</div>
-      <Header />
+      <PortfolioLanding />
     </div>
   );
 };

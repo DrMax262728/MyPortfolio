@@ -12,7 +12,15 @@ const GlobalStyles = createGlobalStyle`
   ${libsStyles};
 
   body {
-    background-color: ${colors.purple800};
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: ${colors.purple700};
+  }
+  
+  h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
 
 `;
