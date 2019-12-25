@@ -4,6 +4,13 @@ module.exports = api => {
   const presets = ["next/babel"];
   const plugins = [
     [
+      "import",
+      {
+        libraryName: "antd",
+        style: false
+      }
+    ],
+    [
       "module-resolver",
       {
         root: ["./"],

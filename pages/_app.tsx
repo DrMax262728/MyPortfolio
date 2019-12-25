@@ -9,6 +9,8 @@ import createStore from "libs/createStore";
 import makeStore from "store";
 // styles
 import GlobalStyles from "styles/globalStyles";
+// @ts-ignore
+import antdSytles from "public/static/antd/antd-style.min.css";
 
 class AppComponent extends App {
   getInitialProps = async ({ ctx, Component }) => {
@@ -26,6 +28,7 @@ class AppComponent extends App {
 
     return (
       <>
+        <style global dangerouslySetInnerHTML={{ __html: antdSytles }} />
         <GlobalStyles />
         <Provider store={store}>
           <Component {...pageProps} />
