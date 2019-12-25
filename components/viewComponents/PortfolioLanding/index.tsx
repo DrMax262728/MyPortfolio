@@ -6,7 +6,6 @@ import Footer from "components/uiElements/Footer";
 const PortfolioLanding = () => (
   <>
     <Header />
-    <Footer/>
   </>
 );
 
